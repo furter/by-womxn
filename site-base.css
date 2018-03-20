@@ -160,6 +160,9 @@ h1 {
 .armata {
     font-family: "armataregular";
 }
+.asul {
+    font-family: "asulregular";
+}
 .bitter {
     font-family: "bitterregular";
 }
@@ -265,11 +268,17 @@ h1 {
 .montserrat-alternates {
     font-family: "montserrat_alternatesregular";
 }
+.notcouriersans {
+    font-family: "notcouriersansregular";
+}
 .nadia-serif {
     font-family: "nadia_serifnormal";
 }
-.notcouriersans {
-    font-family: "notcouriersansregular";
+.oleo {
+    font-family: "oleo_scriptregular";
+}
+.oleo-swash {
+    font-family: "oleo_script_swash_capsregular";
 }
 .ovo {
     font-family: "ovoregular";
@@ -295,11 +304,17 @@ h1 {
 .pt-sans-caption {
     font-family: "pt_sans_captionregular";
 }
+.pt-serif {
+    font-family: "pt_serifregular";
+}
 .quando {
     font-family: "quandoregular";
 }
 .rasa {
     font-family: "rasaregular";
+}
+.ruda {
+    font-family: "rudaregular";
 }
 .signika {
     font-family: "signikaregular";
