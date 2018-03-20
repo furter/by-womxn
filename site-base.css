@@ -1,0 +1,407 @@
+/* réinitialisations de base, ne pas toucher */
+* {
+    margin: 0;
+    padding: 0;
+}
+div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    page-break-inside:avoid;
+}
+body {
+    font-size: 80px;
+}
+a, a:active, a:visited, a:link, a:focus {
+    text-decoration: none;
+    color: black;
+}
+h1 {
+    font-size: 15px;
+    font-weight: normal;
+}
+/*.start {
+    position: fixed;
+    top: 20vh;
+    left: 40%;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    z-index: 1000000;
+    font-size: 260px;
+    text-align: center;
+    background-color: #00ffa5;
+    color: black;
+    font-family: "yatra_oneregular";
+}*/
+.menu {
+    border-bottom: 2px solid black;
+    padding: 10px 20px 10px 20px;
+    font-family: "abeezeeregular";
+    font-size: 15px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 42px;
+    z-index: 1000;
+}
+.menu div {
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu-right .small-arrow {
+    position: fixed;
+    right: 5px;
+    top: 50vh;
+    margin-top: -10px;
+}
+.menu-right svg {
+    position: fixed;
+    right: 5px;
+    top: 5vw;
+    width: 50vw;
+    vector-effect: non-scaling-stroke;
+    stroke-width: 0.5px;
+    display: none;
+}
+.top-space {
+    height: 41px;
+    width: 100%;
+}
+.about {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+.about-content {
+    font-family: "abeezeeregular";
+    font-size: 20px;
+    padding: 20px;
+    border-right: 2px solid black;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+}
+.about-content a {
+    color: #00ffa5;
+}
+.about, .uppercase, .lowercase, .size-smaller, .size-bigger, .bg-color, .paragraph, .title {
+    cursor: pointer;
+}
+.uppercase:hover, .lowercase:hover, .size-smaller:hover, .size-bigger:hover, .bg-color:hover {
+    color: #00ffa5;
+}
+.size-smaller, .size-bigger {
+    padding-right: 10px;
+}
+.font {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    padding-left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background-color: white;
+    margin-right: 40px;
+}
+.font p:hover {
+    color: #00ffa5;
+}
+.font-title {
+    font-size: 80px;
+}
+.font-paragraph {
+    width: 50%;
+    white-space: normal;
+    font-size: 20px;
+    padding: 20px;
+}
+.download {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 10%;
+    cursor: pointer;
+}
+.bg-colored {
+    background-color: darkblue;
+}
+.font-colored {
+    color: white;
+}
+.abeezee {
+    font-family: "abeezeeregular";
+}
+.abhaya {
+    font-family: "abhaya_libreregular";
+}
+.abril {
+    font-family: "abril_fatfaceregular";
+}
+.almendra {
+    font-family: "almendraregular";
+}
+.almendra-display {
+    font-family: "almendra_displayregular";
+}
+.amarante {
+    font-family: "amaranteregular";
+}
+.amaranth {
+    font-family: "amaranthregular";
+}
+.andada {
+    font-family: "andadaregular";
+}
+.arbutus {
+    font-family: "arbutus_slabregular";
+}
+.armata {
+    font-family: "armataregular";
+}
+.bitter {
+    font-family: "bitterregular";
+}
+.caladea {
+    font-family: "caladearegular";
+}
+.cambay {
+    font-family: "cambayregular";
+}
+.cambo {
+    font-family: "camboregular";
+}
+.cantataone {
+    font-family: "cantata_oneregular";
+}
+.capriola {
+    font-family: "capriolaregular";
+}
+.catamaran {
+    font-family: "catamaranregular";
+}
+.cherry-swash {
+    font-family: "cherry_swashregular";
+}
+.courgette {
+    font-family: "courgetteregular";
+}
+.delius {
+    font-family: "deliusregular";
+}
+.delius-unicase {
+    font-family: "delius_unicaseregular";
+}
+.fjord {
+    font-family: "fjordone";
+}
+.fredoka-one {
+    font-family: "fredoka_oneregular";
+}
+.gemunu {
+    font-family: "gemunu_libreregular";
+}
+.gudea {
+    font-family: "gudearegular";
+}
+.happy-monkey {
+    font-family: "happy_monkeyregular";
+}
+.harmattan {
+    font-family: "harmattanregular";
+}
+.hind {
+    font-family: "hindregular";
+}
+.infini {
+    font-family: "infiniregular";
+}
+.inika {
+    font-family: "inikaregular";
+}
+.junction {
+    font-family: "junctionregular";
+}
+.karma {
+    font-family: "karmamedium";
+}
+.keania-one {
+    font-family: "keania_oneregular";
+}
+.khula {
+    font-family: "khularegular";
+}
+.kotta-one {
+    font-family: "kotta_oneregular";
+}
+.kreon {
+    font-family: "kreonregular";
+}
+.krona-one {
+    font-family: "krona_oneregular";
+}
+.league-gothic {
+    font-family: "league_gothicregular";
+}
+.league-spartan {
+    font-family: "league_spartanbold";
+}
+.lily-script {
+    font-family: "lily_script_oneregular";
+}
+.lusitana {
+    font-family: "lusitanaregular";
+}
+.marvel {
+    font-family: "marvelregular";
+}
+.montaga {
+    font-family: "montagaregular";
+}
+.montserrat {
+    font-family: "montserratregular";
+}
+.montserrat-alternates {
+    font-family: "montserrat_alternatesregular";
+}
+.nadia-serif {
+    font-family: "nadia_serifnormal";
+}
+.notcouriersans {
+    font-family: "notcouriersansregular";
+}
+.ovo {
+    font-family: "ovoregular";
+}
+.palanquin {
+    font-family: "palanquinregular";
+}
+.palanquin-dark {
+    font-family: "palanquin_darkregular";
+}
+.pinyon-script {
+    font-family: "pinyon_scriptregular";
+}
+.poller-one {
+    font-family: "poller_oneregular";
+}
+.pompiere {
+    font-family: "pompiere_regular";
+}
+.pt-sans {
+    font-family: "pt_sansregular";
+}
+.pt-sans-caption {
+    font-family: "pt_sans_captionregular";
+}
+.quando {
+    font-family: "quandoregular";
+}
+.rasa {
+    font-family: "rasaregular";
+}
+.signika {
+    font-family: "signikaregular";
+}
+.sniglet {
+    font-family: "snigletregular";
+}
+.spinnaker {
+    font-family: "spinnakerregular";
+}
+.tauri {
+    font-family: "tauriregular";
+}
+.trueno {
+    font-family: "truenoregular";
+}
+.tulpen {
+    font-family: "tulpen_oneregular";
+}
+.vast-shadow {
+    font-family: "vast_shadowregular";
+}
+.voltaire {
+    font-family: "voltaireregular";
+}
+.yaldevi {
+    font-family: "yaldevi_jaffnaregular";
+}
+.yatra-one {
+    font-family: "yatra_oneregular";
+}
+.zarathustra {
+    font-family: "zarathustraregular";
+}
+
+/* RESPONSIVE */
+
+/* ÉCRAN SEULEMENT */
+@media screen {
+    .print-only {
+        display: none;
+    }
+}
+
+/* ÉCRAN (VALEURS MINIMUM) */
+@media screen and (min-width: 480px) {
+
+}
+/* ÉCRAN (VALEURS MAXIMUM) */
+@media screen and (max-width: 480px) {
+    body {
+    }
+    .menu {
+        height: 60px;
+    }
+    .menu-right svg {
+        position: fixed;
+        right: 5px;
+        top: 50vh;
+        margin-top: -10px;
+        width: 30px;
+        vector-effect: non-scaling-stroke;
+        stroke-width: 10px;
+        display: none;
+    }
+    .top-space {
+        height: 60px;
+    }
+    .about-content {
+        width: 100%;
+        background-color: white;
+    }
+    .font {
+        font-size: 60px;
+    }
+    .font-paragraph {
+        width: initial;
+        white-space: normal;
+        font-size: 18px;
+        padding: 20px;
+        margin-right: 40px;
+    }
+    .download {
+        visibility: hidden;
+    }
+}
+
+/* IMPRESSION */
+
+@media print {
+    body {
+        color: blue;
+    }
+    .screen-only {
+        display: none;
+    }
+    .about, .uppercase, .lowercase, .size-smaller, .size-bigger, .bg-color, .paragraph, .title {
+        display: none;
+    }
+}
+
+@page {
+    size: 210mm 297mm;
+    margin: none;
+}
